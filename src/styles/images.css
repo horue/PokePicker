@@ -1,0 +1,15 @@
+.pokemon-image-box{
+    display: flex;         
+    justify-content: center; 
+    align-items: center;  
+    padding: 80px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+}
+
+.pokemon-images{
+    user-select: none;
+    height: 100%; 
+    width: 100%;
+    
+}
