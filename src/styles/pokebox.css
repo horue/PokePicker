@@ -1,0 +1,24 @@
+.pokebox {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    text-align: center;
+    background-color: #f0f0f0;
+    opacity: 0.9;
+    border-radius: 20px;
+    width: 90%;
+    gap: 20px;
+    padding: 20px;
+}
+
+.type-box {
+    display: flex;         /* Coloca os elementos filhos lado a lado */
+    justify-content: center; /* Centraliza os textos horizontalmente */
+    gap: 5%;
+    align-items: center;   
+}
+
+.type-box img {
+    width: 40%; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 40%; /* Ajuste o tamanho da imagem conforme necessário */
+}
