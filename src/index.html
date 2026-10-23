@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéPicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/pokebox.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <script src="js/pokepicker.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-frame" onclick="getPokemon()">
+
+            <div class="pokebox">
+
+                <div class="pokemon-image-box">
+                    <img id="pokemonImage" src="" alt="alternatetext" class="pokemon-images"> 
+                </div>
+
+                <div class="pokemon-info">
+                    <h2 id="pokemonName" class="pokemon-name">Unknown</h2>
+                    <h2 id="pokemonNumber" class="pokemon-number">#0000</h2>
+                </div>
+
+                <div class="type-box">
+                    <img id="type1" src="" alt="Type 1">
+                    <img id="type2" src="" alt="Type 2">
+                </div>
+
+            </div> 
+
+    </div>
+</body>
+</html>
