@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    getPokemon();
+});
+
 function getPokemon(params) {
     const pokemonNumber = Math.floor(Math.random() * 1025)
     pokemonNumber + 1
