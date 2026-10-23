@@ -9,8 +9,6 @@
     min-height: 100vh;      
 }
 
-
-
 .pokemon-name{
     text-transform: capitalize;
     user-select: none;
@@ -19,6 +17,8 @@
     font-style: normal;
     text-align: center;      /* Alinha o nome para a direita (em direção ao número) */
     font-size: 64px;           /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 1%;
+
 }   
 
 .pokemon-number{
@@ -28,6 +28,8 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 32px;           /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 1%;
+
 }   
 
 .pokemon-info {
