@@ -2,9 +2,17 @@ document.addEventListener('DOMContentLoaded', function() {
     getPokemon();
 });
 
+let generatedPokemon = []; 
+
 function getPokemon(params) {
-    const pokemonNumber = Math.floor(Math.random() * 1025)
-    pokemonNumber + 1
+    const pokemonNumber = Math.floor(Math.random() * 1025) + 1
+    if (generatedPokemon.includes(pokemonNumber)) {
+        if (generatedPokemon.length >= 1025) {
+            generatedPokemon = [];
+        }
+        return getPokemon();
+    }
+    generatedPokemon.push(pokemonNumber);
     updatePokemonImage(pokemonNumber)
     updatePokemonNameAndNumber(pokemonNumber)
     updatePokemonTypes(pokemonNumber)
