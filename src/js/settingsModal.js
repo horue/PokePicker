@@ -1,5 +1,4 @@
 const openBtn = document.querySelector('#btnConfig');
-const testBtn = document.querySelector('#testButton');
 let state = false
 
 
