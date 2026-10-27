@@ -29,13 +29,16 @@
     flex-direction: column;   
     align-items: center;      
     text-align: center;
-    background-color: #f0f0f0e5;
+    background-color: #f0f0f0f8;
     border-radius: 20px;
     width: 60%;
     gap: 20px;
     padding: 20px;
     visibility: hidden;
+    z-index: 9998;
+    border: 9999px solid #ff111100;
 }
+
 .pokebox-config label, p, option{
     user-select: none;
     font-family: "Nunito", sans-serif;
@@ -54,8 +57,9 @@
     text-align: center;    
     font-size: 24px;          
     margin: 1%;
-    background-color: #f0f0f0e5;
+    background-color: #f0f0f0fa;
     border-radius: 50px;
-    width: 80%;
+    width: 200px;
+    height: 40px;
 }
 

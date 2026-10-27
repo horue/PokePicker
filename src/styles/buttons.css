@@ -10,3 +10,20 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+
+.btn-save{
+  background-color: #eceef1;
+  border-radius: 50px;
+  cursor: pointer;
+    user-select: none;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;    
+    font-size: 24px;          
+    margin: 1%;
+    background-color: #f0f0f0fa;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+}
