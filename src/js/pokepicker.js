@@ -2,10 +2,21 @@ document.addEventListener('DOMContentLoaded', function() {
     getPokemon();
 });
 
-let generatedPokemon = []; 
+let generatedPokemon = [];
 
 function getPokemon(params) {
-    const pokemonNumber = Math.floor(Math.random() * 1025) + 1
+    const parameters = checkSettings();
+    let pokemonNumber;
+    console.log('Parâmetros recebidos:', parameters);
+
+    if (parameters.mode === 'upTo') {
+        pokemonNumber = Math.floor(Math.random() * parameters.generation) + 1
+    }
+    else if (parameters.mode === 'only') {
+        console.log("modo only")
+        pokemonNumber = Math.floor(Math.random() * (parameters.generation - parameters.startAt) + parseInt(parameters.startAt) + 1);
+    }
+
     if (generatedPokemon.includes(pokemonNumber)) {
         if (generatedPokemon.length >= 1025) {
             generatedPokemon = [];
@@ -17,6 +28,16 @@ function getPokemon(params) {
     updatePokemonNameAndNumber(pokemonNumber)
     updatePokemonTypes(pokemonNumber)
     return pokemonNumber
+}
+
+function checkSettings() {
+    const selectedMode = document.querySelector('#modes').value;
+    const generationSelect = document.querySelector('#generations');
+    const selectedGeneration = generationSelect.value;
+    const generationStart = generationSelect.options[generationSelect.selectedIndex].getAttribute('data-start-at');
+    const parametersList = {mode: selectedMode, generation: selectedGeneration, startAt: generationStart};
+    console.log('Parâmetros selecionados:', parametersList);
+    return parametersList
 }
 
 function updatePokemonImage(pokemonNumber) {
