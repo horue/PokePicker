@@ -31,8 +31,31 @@
     text-align: center;
     background-color: #f0f0f0e5;
     border-radius: 20px;
-    width: 50%;
+    width: 40%;
     gap: 20px;
     padding: 20px;
     visibility: hidden;
 }
+.pokebox-config label, p, option{
+    user-select: none;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;      /* Alinha o nome para a direita (em direção ao número) */
+    font-size: 24px;           /* Ajuste o tamanho da fonte conforme necessário */
+    margin: 1%;
+}
+
+.pokebox-config select{
+    user-select: none;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;    
+    font-size: 24px;          
+    margin: 1%;
+    background-color: #f0f0f0e5;
+    border-radius: 50px;
+    width: 40%;
+}
+
