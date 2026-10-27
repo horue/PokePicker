@@ -1,0 +1,13 @@
+.btn-config {
+  position: fixed;  
+  bottom: 2%;    
+  right: 20px;      
+  z-index: 9999; 
+    padding: 12px 20px;
+  background-color: #eceef1;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
