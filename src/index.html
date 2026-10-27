@@ -7,13 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/pokebox.css">
     <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/buttons.css">
     <script src="js/pokepicker.js" defer></script>
+    <script src="js/settingsModal.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body>   
+    <button class="btn-config" id="btnConfig">⚙️</button>
+
+    <div class="pokebox-config">
+        <p>Settings</p>
+        <label for="modes">Choose a mode:</label>
+        <select name="modes" id="modes">
+            <option value="upTo">Up to</option>
+            <option value="only">Only</option>
+        </select>
+        <label for="generations">Choose a generation:</label>
+        <select name="generations" id="generations">
+            <option value=1>Generation 1</option>
+            <option value=2>Generation 2</option>
+            <option value=3>Generation 3</option>
+            <option value=4>Generation 4</option>
+            <option value=5>Generation 5</option>
+            <option value=6>Generation 6</option>
+            <option value=7>Generation 7</option>
+            <option value=8>Generation 8</option>
+            <option value=9>Generation 9</option>
+        </select>
+        <button id="testButton">test</button>
+
+        <p>PokéPicker by horue</p>
+
+    </div>
+
     <div class="main-frame" onclick="getPokemon()">
 
             <div class="pokebox">
@@ -22,7 +51,7 @@
                     <img id="pokemonImage" src="" alt="alternatetext" class="pokemon-images"> 
                 </div>
 
-                <h2 id="pokemonName" class="pokemon-name">Unknown</h2>
+                <h2 id="pokemonName" class="pokemon-name">-</h2>
                 <h2 id="pokemonNumber" class="pokemon-number">#0000</h2>
 
                 <div class="type-box">
