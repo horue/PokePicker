@@ -19,13 +19,6 @@ openBtn.addEventListener('click', () => {
     }
 });
 
-testBtn.addEventListener('click', () => {
-    console.log('Botão de teste clicado');
-    const generationSelect = document.querySelector('#generations');
-    const selectedGeneration = generationSelect.value;
-    console.log('Geração selecionada:', selectedGeneration);
-});
-
 function showSettingsModal() {
   const modal = document.querySelector('.pokebox-config');
   modal.style.visibility = 'visible';
