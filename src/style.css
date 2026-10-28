@@ -54,7 +54,7 @@ body {
     repeating-linear-gradient(-45deg, #c9cfe4 0px, #c9cfe4 2px, transparent 2px, transparent 40px);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* MUDOU AQUI (Era center) */
   align-items: center;
   display: flex;
   flex-direction: column;  
