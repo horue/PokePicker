@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="styles/pokebox.css">
     <link rel="stylesheet" href="styles/images.css">
     <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/scoreboard.css">
     <script src="js/pokepicker.js" defer></script>
     <script src="js/settingsModal.js" defer></script>
+    <script src="js/scoreboard.js" defer></script>
+    <script src="js/addScoreboard.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -40,6 +43,7 @@
             <option selected data-start-at=905 value=1025>Generation 9</option>
         </select>
         <button class="btn-save" id="btnSave">Save</button>
+        <button class="btn-save" id="btnAddPlayer">Add Player</button>
         <p>PokéPicker by horue</p>
 
     </div>
@@ -63,5 +67,7 @@
             </div> 
 
     </div>
+    <div class="scoreboard-container" id="scoreboard-container"></div>
+
 </body>
 </html>
